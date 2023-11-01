@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Homepage {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.Homepage-container {
+    background-image: url("./images/mobile/image-header.jpg");
+    background-size: cover;    
+}
+
+.Services {
+    background-color: blanchedalmond;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Testimonies {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Projects {
+    background-color: skyblue;
+    width: 100vw;
+    height: 100vh;
+}
+

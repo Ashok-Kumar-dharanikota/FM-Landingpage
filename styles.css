@@ -42,7 +42,7 @@ nav {
     top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
+    display: flex;
     flex-direction: column;
     background-color: white;
     width: auto;
@@ -86,14 +86,16 @@ nav a:hover {
 .title {
     color: white;
     text-align: center;
-    letter-spacing: .5rem;
-    font-size: 2rem;
-    margin-top: 2rem;
+    letter-spacing: .4rem;
+    font-size: 2.3rem;
+    margin-top: 10rem;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
 }
 
 .arrow {
     position: absolute;
-    top: 36%;
+    top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;

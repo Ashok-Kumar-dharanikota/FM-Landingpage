@@ -15,21 +15,14 @@ section h1  {
 }
 
 
-.Homepage {
+.Home {
     width: 100vw;
     height: 100vh;
-    background-color: bisque;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.Homepage-container {
     background-image: url("./images/mobile/image-header.jpg");
     background-size: 100% 100%;
-    height: 100%;
-    min-height: 60%;
+
 }
+
 
 header {
     padding: 20px;
@@ -108,7 +101,7 @@ nav a:hover {
     
 }
 
-.Services {
+.Advatise {
     background-color: white;
     width: 100vw;
     height: 100vh;
@@ -117,45 +110,127 @@ nav a:hover {
     flex-direction: column;
 }
 
-.Transform-2 {
+.Advatise-banner {
     width: 100%;
 }
 
-.Services h1 {
-    margin-top: 40px;
+ .Advatise h1 {
     font-size: 2.2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 1rem;
 }
 
-.Services p {
+
+.Advatise p {
     color: hsla(167, 40%, 24%, 0.732);
     margin-left: auto;
     margin-right: auto;
     margin: 30px;
     line-height: 1.5;
-}
+} 
 
-.Services-container {
+.Advatise-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 100%;
 }
 
-.Services-container span {
+.Advatise-container span {
     padding: 8px;
     text-transform: uppercase;
     background-color: bisque;
     font-family: 'Fraunces', serif;
     height: 0;
     letter-spacing: 2px;
-    margin-top: -1rem;
+    margin-bottom: 2rem;
+} 
+
+.Services {
+    width: auto;
+    height: auto;
+}
+
+.services-container-one {
+    background-image: url("./images/mobile/image-graphic-design.jpg");
+    background-size: 100% 100%;
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    align-items:last baseline;
+    color: hsl(167, 40%, 24%);
+}
+
+
+.services-container-two {
+    background-image: url("./images/mobile/image-photography.jpg");
+    background-size: 100% 100%;
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    align-items:last baseline;
+    color: hsl(198, 62%, 26%);
+}
+
+
+.service-container {
+    margin: 3rem 1rem;
+}
+
+.service-container h1 {
+    margin: 2rem;
+}
+
+.service-container p {
+    line-height: 1.5;
+}
+
+.services-container img {
+    width: 100%;
 }
 
 .Testimonies {
-    background-color:beige;
-    width: 100vw;
-    height: 100vh;
+    background-color:white;
+    text-align: center;
+}
+
+.testimonials-title  {
+    color: hsl(210, 4%, 67%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Fraunces', serif;
+    padding: 2rem;
+}
+
+.Testimony {
+    padding: 15px;
+}
+
+.Testimony img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.Testimony p {
+    padding: 20px;
+    color: hsl(213, 9%, 39%);
+    line-height: 1.5;
+}
+
+.Testimony h3 {
+    font-family: 'Fraunces', serif;
+}
+
+.Testimony span {
+    font-size: small;
+    color: hsl(210, 4%, 67%);
+}
+
+.person {
+    padding: 20px;
 }
 
 .Projects {

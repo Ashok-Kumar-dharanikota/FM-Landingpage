@@ -47,7 +47,7 @@ nav a:hover {
 
 .arrow {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -57,9 +57,9 @@ nav a:hover {
 .title {
     color: white;
     text-align: center;
-    letter-spacing: .4rem;
-    font-size: 2.3rem;
-    margin-top: 10rem;
+    letter-spacing: 1.5rem;
+    font-size: 3.3rem;
+    margin-top: 5rem;
     font-family: 'Fraunces', serif;
     text-transform: uppercase;
 }
@@ -67,12 +67,202 @@ nav a:hover {
 .Advatise {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex: 1;
 }
 
 .Advatise-banner {
     width: 50vw;
 }
+
+.Transform {
+    width: 50vw;
+    height: 50vh;
+    object-fit: contain;
+    
+}
+
+ .Advatise h1 {
+    font-size: 2.2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 1rem;
+}
+
+
+.Advatise p {
+    color: hsla(167, 40%, 24%, 0.732);
+    margin-left: auto;
+    margin-right: auto;
+    margin: 30px;
+    margin: 30px 7.3rem;
+    line-height: 1.5;
+} 
+
+.Advatise-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+    text-align: left;
+}
+
+.Advatise-container span {
+    padding: 8px;
+    text-transform: uppercase;
+    background-color: bisque;
+    font-family: 'Fraunces', serif;
+    height: 0;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+} 
+
+.Advatise-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.Services {
+    display: flex;
+
+}
+
+.Services {
+    width: auto;
+    height: auto;
+}
+
+.services-container-one {
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items:last baseline;
+    color: hsl(167, 40%, 24%);
+    width: 50vw;
+}
+
+
+.services-container-two {
+    background-image: url("./images/desktop/image-photography.jpg");
+    background-size: cover;
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    align-items:last baseline;
+    color: hsl(198, 62%, 26%);
+    width: 50vw;
+}
+
+.service-container {
+    margin: 3rem 13rem;
+}
+
+.service-container h1 {
+    margin: 2rem;
+}
+
+.service-container p {
+    line-height: 1.5;
+}
+
+.services-container img {
+    width: 100%;
+}
+
+
+.Testimonies {
+    background-color:white;
+    text-align: center;
+    padding: 6rem;
+}
+
+.testimonials-title  {
+    color: hsl(210, 4%, 67%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Fraunces', serif;
+    padding: 2rem;
+}
+
+.Testimonies-list {
+    display: flex;
+}
+
+.Testimony {
+    padding: 15px;
+}
+
+.Testimony img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.Testimony p {
+    padding: 20px;
+    color: hsl(213, 9%, 39%);
+    line-height: 1.5;
+}
+
+.Testimony h3 {
+    font-family: 'Fraunces', serif;
+}
+
+.Testimony span {
+    font-size: small;
+    color: hsl(210, 4%, 67%);
+}
+
+.person {
+    padding: 20px;
+}
+
+
+footer {
+    background-color: hsl(210, 4%, 67%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.footer-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-container img {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-logo {
+    padding-top: 4rem;
+}
+
+.footer-menu {
+    display: flex; 
+}
+
+.footer-menu a {
+    padding: 2rem;
+    padding-top: 3rem;
+    text-decoration: none;
+    color: hsl(168, 34%, 41%);
+}
+
+.footer-social img {
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+
 
 
 /* Extra small devices with 600px and below.  */
@@ -186,9 +376,8 @@ nav a:hover {
 
  .Advatise h1 {
     font-size: 2.2rem;
-    margin-left: 10px;
-    margin-right: 10px;
     margin-top: 1rem;
+    text-align: left;
 }
 
 
@@ -217,6 +406,10 @@ nav a:hover {
     letter-spacing: 2px;
     margin-bottom: 2rem;
 } 
+
+.two {
+    display: flex;
+}
 
 .Services {
     width: auto;

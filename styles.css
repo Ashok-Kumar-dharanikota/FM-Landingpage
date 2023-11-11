@@ -365,8 +365,6 @@ nav a:hover {
     background-color: white;
     width: 100vw;
     height: 100vh;
-    text-align: center;
-    display: flex;
     flex-direction: column;
 }
 
@@ -375,9 +373,8 @@ nav a:hover {
 }
 
  .Advatise h1 {
-    font-size: 2.2rem;
-    margin-top: 1rem;
-    text-align: left;
+    text-align: center;
+    margin: 1rem 0px 0px 0px;
 }
 
 
@@ -395,6 +392,7 @@ nav a:hover {
     align-items: center;
     justify-content: space-around;
     height: 100%;
+    width: 100vw;
 }
 
 .Advatise-container span {
@@ -414,6 +412,7 @@ nav a:hover {
 .Services {
     width: auto;
     height: auto;
+    display: block;
 }
 
 .services-container-one {
@@ -424,6 +423,7 @@ nav a:hover {
     display: flex;
     align-items:last baseline;
     color: hsl(167, 40%, 24%);
+    width: 100vw;
 }
 
 
@@ -435,6 +435,7 @@ nav a:hover {
     display: flex;
     align-items:last baseline;
     color: hsl(198, 62%, 26%);
+    width: 100vw;
 }
 
 
@@ -454,9 +455,15 @@ nav a:hover {
     width: 100%;
 }
 
+.Testimonies-list {
+    display: block;
+    flex-direction: column;
+}
+
 .Testimonies {
     background-color:white;
     text-align: center;
+    padding: 0;
 }
 
 .testimonials-title  {

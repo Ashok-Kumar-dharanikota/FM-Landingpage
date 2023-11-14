@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +9,7 @@ section p {
     font-family: 'Barlow', sans-serif;
 }
 
-section h1  {
+section h1 {
     font-family: 'Fraunces', serif;
 }
 
@@ -62,7 +61,22 @@ nav a:hover {
     margin-top: 5rem;
     font-family: 'Fraunces', serif;
     text-transform: uppercase;
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: fadeInUp 1s ease-in;
 }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .Advatise {
     display: flex;
@@ -79,10 +93,10 @@ nav a:hover {
     width: 50vw;
     height: 50vh;
     object-fit: contain;
-    
+
 }
 
- .Advatise h1 {
+.Advatise h1 {
     font-size: 2.2rem;
     margin-left: 10px;
     margin-right: 10px;
@@ -97,7 +111,7 @@ nav a:hover {
     margin: 30px;
     margin: 30px 7.3rem;
     line-height: 1.5;
-} 
+}
 
 .Advatise-container {
     display: flex;
@@ -106,6 +120,10 @@ nav a:hover {
     justify-content: space-around;
     width: 50vw;
     text-align: left;
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: fadeInUp 1s ease-in;
+
 }
 
 .Advatise-container span {
@@ -116,7 +134,7 @@ nav a:hover {
     height: 0;
     letter-spacing: 2px;
     margin-bottom: 2rem;
-} 
+}
 
 .Advatise-two {
     display: flex;
@@ -140,7 +158,7 @@ nav a:hover {
     background-size: cover;
     text-align: center;
     display: flex;
-    align-items:last baseline;
+    align-items: last baseline;
     color: hsl(167, 40%, 24%);
     width: 50vw;
 }
@@ -152,7 +170,7 @@ nav a:hover {
     height: 90vh;
     text-align: center;
     display: flex;
-    align-items:last baseline;
+    align-items: last baseline;
     color: hsl(198, 62%, 26%);
     width: 50vw;
 }
@@ -175,12 +193,12 @@ nav a:hover {
 
 
 .Testimonies {
-    background-color:white;
+    background-color: white;
     text-align: center;
     padding: 6rem;
 }
 
-.testimonials-title  {
+.testimonials-title {
     color: hsl(210, 4%, 67%);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -248,7 +266,7 @@ footer {
 }
 
 .footer-menu {
-    display: flex; 
+    display: flex;
 }
 
 .footer-menu a {
@@ -266,286 +284,286 @@ footer {
 
 
 /* Extra small devices with 600px and below.  */
-@media only screen and (max-width: 375px) { 
+@media only screen and (max-width: 375px) {
 
 
 
 
-.Home {
-    background-image: url("./images/mobile/image-header.jpg");
-    background-size: 100% 100%;
-}
+    .Home {
+        background-image: url("./images/mobile/image-header.jpg");
+        background-size: 100% 100%;
+    }
 
 
-header {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
+    header {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.header-menu {
-    display: block;
-}
-
-
-nav {
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: auto;
-    height: auto;
-    min-width: 90%;
-    min-height: 10%;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    margin-right: 0px;
-    max-height: 50%;
-}
-
-nav a {
-    text-decoration: none;
-    color: #808080;
-    font-weight: bold;
-    line-height: 1.5;
-
-}
-
-nav a:hover {
-    color: black;
-    background-color: hsl(51, 100%, 49%);
-    padding: 0px 20px;
-    border-radius: 18px;
-}
-
-.square {
-    position: absolute;
-	width: 0;
-	height: 0;
-    top: -24px;
-    right: 0;
-	border-top: 25px solid transparent;
-	border-right: 50px solid white;
-	border-bottom: none;
-    border-left: none;
-}
+    .header-menu {
+        display: block;
+    }
 
 
-.title {
-    color: white;
-    text-align: center;
-    letter-spacing: .4rem;
-    font-size: 2.3rem;
-    margin-top: 10rem;
-    font-family: 'Fraunces', serif;
-    text-transform: uppercase;
-}
+    nav {
+        position: absolute;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        width: auto;
+        height: auto;
+        min-width: 90%;
+        min-height: 10%;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        margin-right: 0px;
+        max-height: 50%;
+    }
 
-.arrow {
-    position: absolute;
-    top: 66%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-}
+    nav a {
+        text-decoration: none;
+        color: #808080;
+        font-weight: bold;
+        line-height: 1.5;
 
-.Transform {
-    width: 100%;
-    height: 40%;
-    object-fit: cover;
-    
-}
+    }
 
-.Advatise {
-    background-color: white;
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column;
-}
+    nav a:hover {
+        color: black;
+        background-color: hsl(51, 100%, 49%);
+        padding: 0px 20px;
+        border-radius: 18px;
+    }
 
-.Advatise-banner {
-    width: 100%;
-}
-
- .Advatise h1 {
-    text-align: center;
-    margin: 1rem 0px 0px 0px;
-}
-
-
-.Advatise p {
-    color: hsla(167, 40%, 24%, 0.732);
-    margin-left: auto;
-    margin-right: auto;
-    margin: 30px;
-    line-height: 1.5;
-} 
-
-.Advatise-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
-    width: 100vw;
-}
-
-.Advatise-container span {
-    padding: 8px;
-    text-transform: uppercase;
-    background-color: bisque;
-    font-family: 'Fraunces', serif;
-    height: 0;
-    letter-spacing: 2px;
-    margin-bottom: 2rem;
-} 
-
-.two {
-    display: flex;
-}
-
-.Services {
-    width: auto;
-    height: auto;
-    display: block;
-}
-
-.services-container-one {
-    background-image: url("./images/mobile/image-graphic-design.jpg");
-    background-size: 100% 100%;
-    height: 90vh;
-    text-align: center;
-    display: flex;
-    align-items:last baseline;
-    color: hsl(167, 40%, 24%);
-    width: 100vw;
-}
+    .square {
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: -24px;
+        right: 0;
+        border-top: 25px solid transparent;
+        border-right: 50px solid white;
+        border-bottom: none;
+        border-left: none;
+    }
 
 
-.services-container-two {
-    background-image: url("./images/mobile/image-photography.jpg");
-    background-size: 100% 100%;
-    height: 90vh;
-    text-align: center;
-    display: flex;
-    align-items:last baseline;
-    color: hsl(198, 62%, 26%);
-    width: 100vw;
-}
+    .title {
+        color: white;
+        text-align: center;
+        letter-spacing: .4rem;
+        font-size: 2.3rem;
+        margin-top: 10rem;
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+
+    .Transform {
+        width: 100%;
+        height: 40%;
+        object-fit: cover;
+
+    }
+
+    .Advatise {
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .Advatise-banner {
+        width: 100%;
+    }
+
+    .Advatise h1 {
+        text-align: center;
+        margin: 1rem 0px 0px 0px;
+    }
 
 
-.service-container {
-    margin: 3rem 1rem;
-}
+    .Advatise p {
+        color: hsla(167, 40%, 24%, 0.732);
+        margin-left: auto;
+        margin-right: auto;
+        margin: 30px;
+        line-height: 1.5;
+    }
 
-.service-container h1 {
-    margin: 2rem;
-}
+    .Advatise-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        width: 100vw;
+    }
 
-.service-container p {
-    line-height: 1.5;
-}
+    .Advatise-container span {
+        padding: 8px;
+        text-transform: uppercase;
+        background-color: bisque;
+        font-family: 'Fraunces', serif;
+        height: 0;
+        letter-spacing: 2px;
+        margin-bottom: 2rem;
+    }
 
-.services-container img {
-    width: 100%;
-}
+    .two {
+        display: flex;
+    }
 
-.Testimonies-list {
-    display: block;
-    flex-direction: column;
-}
+    .Services {
+        width: auto;
+        height: auto;
+        display: block;
+    }
 
-.Testimonies {
-    background-color:white;
-    text-align: center;
-    padding: 0;
-}
+    .services-container-one {
+        background-image: url("./images/mobile/image-graphic-design.jpg");
+        background-size: 100% 100%;
+        height: 90vh;
+        text-align: center;
+        display: flex;
+        align-items: last baseline;
+        color: hsl(167, 40%, 24%);
+        width: 100vw;
+    }
 
-.testimonials-title  {
-    color: hsl(210, 4%, 67%);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-family: 'Fraunces', serif;
-    padding: 2rem;
-}
 
-.Testimony {
-    padding: 15px;
-}
+    .services-container-two {
+        background-image: url("./images/mobile/image-photography.jpg");
+        background-size: 100% 100%;
+        height: 90vh;
+        text-align: center;
+        display: flex;
+        align-items: last baseline;
+        color: hsl(198, 62%, 26%);
+        width: 100vw;
+    }
 
-.Testimony img {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-}
 
-.Testimony p {
-    padding: 20px;
-    color: hsl(213, 9%, 39%);
-    line-height: 1.5;
-}
+    .service-container {
+        margin: 3rem 1rem;
+    }
 
-.Testimony h3 {
-    font-family: 'Fraunces', serif;
-}
+    .service-container h1 {
+        margin: 2rem;
+    }
 
-.Testimony span {
-    font-size: small;
-    color: hsl(210, 4%, 67%);
-}
+    .service-container p {
+        line-height: 1.5;
+    }
 
-.person {
-    padding: 20px;
-}
+    .services-container img {
+        width: 100%;
+    }
 
-.Projects {
-    background-color: skyblue;
-    width: 100vw;
-    height: 100vh;
-}
+    .Testimonies-list {
+        display: block;
+        flex-direction: column;
+    }
 
-footer {
-    background-color: hsl(210, 4%, 67%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    .Testimonies {
+        background-color: white;
+        text-align: center;
+        padding: 0;
+    }
 
-}
+    .testimonials-title {
+        color: hsl(210, 4%, 67%);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: 'Fraunces', serif;
+        padding: 2rem;
+    }
 
-.footer-container {
-    display: grid;
-    grid-template-rows:  1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-}
+    .Testimony {
+        padding: 15px;
+    }
 
-.footer-container img {
-    flex: 1;
-    width: 100%;
-    height: 100%;
-}
+    .Testimony img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
 
-.footer-logo {
-    padding-top: 2rem;
-}
+    .Testimony p {
+        padding: 20px;
+        color: hsl(213, 9%, 39%);
+        line-height: 1.5;
+    }
 
-.footer-menu {
-    display: flex; 
-}
+    .Testimony h3 {
+        font-family: 'Fraunces', serif;
+    }
 
-.footer-menu a {
-    padding: 2rem;
-    text-decoration: none;
-    color: hsl(168, 34%, 41%);
-}
+    .Testimony span {
+        font-size: small;
+        color: hsl(210, 4%, 67%);
+    }
 
-.footer-social img {
-    padding: 1rem;
-}
+    .person {
+        padding: 20px;
+    }
+
+    .Projects {
+        background-color: skyblue;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    footer {
+        background-color: hsl(210, 4%, 67%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-container img {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer-logo {
+        padding-top: 2rem;
+    }
+
+    .footer-menu {
+        display: flex;
+    }
+
+    .footer-menu a {
+        padding: 2rem;
+        text-decoration: none;
+        color: hsl(168, 34%, 41%);
+    }
+
+    .footer-social img {
+        padding: 1rem;
+    }
 
 }

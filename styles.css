@@ -50,6 +50,10 @@ nav a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: lengthandopacity 1s ease-in;
+
 }
 
 
@@ -77,6 +81,16 @@ nav a:hover {
     }
 }
 
+@keyframes lengthandopacity {
+    0% {
+        opacity: 0;
+        height: 0;
+    }
+    100% {
+        opacity: 1;
+        height: auto;
+    }
+}
 
 .Advatise {
     display: flex;
@@ -311,7 +325,7 @@ footer {
         top: 32%;
         left: 50%;
         transform: translate(-50%, -50%);
-        display: none;
+        display: flex;
         flex-direction: column;
         background-color: white;
         width: auto;

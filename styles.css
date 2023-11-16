@@ -75,6 +75,7 @@ nav a:hover {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -86,6 +87,7 @@ nav a:hover {
         opacity: 0;
         height: 0;
     }
+
     100% {
         opacity: 1;
         height: auto;
@@ -298,8 +300,7 @@ footer {
 
 
 /* Extra small devices with 600px and below.  */
-@media only screen and (max-width: 375px) {
-
+@media only screen and (max-width: 600px) {
 
 
 
